@@ -8,8 +8,10 @@ enum DayOfWeek {
   Sunday,
 }
 
-const isWeekend = (day: DayOfWeek) => {
-    if (day === 'Saturday') {
-        
+const isWeekend = (day: DayOfWeek):boolean => {
+  if (day === DayOfWeek.Sunday || day === DayOfWeek.Saturday) {
+      return true
+  } else {
+    return false
     }
 };
